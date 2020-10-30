@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+$alt-bg: rgb(143, 143, 143);
+//$accent: #0c2e79;
+$accent: #e0b31e;
+
+$alt-color: white;
+$body-color: gray;
+$background-color: #49494e;
+
+$my-blue: #007bff;
+$my-white: white;
+
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//   }
+
+  .title {
+    color: $my-white;
+  }
+  
+  .secondary_title {
+    color: $my-white;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+  
+  .scroll-container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  
+
+  /*************** NAVBAR ***************/
+
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+   
+    /* Scroll Snap */
+    scroll-snap-align: center;
+  }
+  
+  section h1 {
+    font-size: 4rem;
+  }
+  
+  /* Section Images */
+  section#home {
+    background: gray;
+  }
+  
+  section#portfolio {
+    background: black;
+  }
+  
+  section#service {
+    background: gray;
+  }
+  
+  section#contact {
+    background: black;
+  }
+  
+  
+    /* ToDO: Test it on laptops! */
+
+  @media screen and (max-width: 600px) {
+    section {
+      scroll-snap-align: none;
+    }
+  }

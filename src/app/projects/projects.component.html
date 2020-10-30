@@ -1,0 +1,10 @@
+<h1 class="title">Portfolio</h1>
+<ul class="honeycomb" lang="en">
+    <li class="honeycomb-cell" *ngFor="let project of projects">
+      <!-- <img class="honeycomb-cell__image" src="{{'../../assets/' + projects.name + '.png'}}"> -->
+      <a ><div class="honeycomb-cell__title">{{project.name}}</div></a>
+       - {{project.language}}
+    </li>
+    <li class="honeycomb-cell honeycomb__placeholder"></li>
+  </ul>
+ 
