@@ -16,7 +16,7 @@ export class ProjectsService {
   constructor(private http: HttpClient) { }
 
   getProjects(): Observable<Project[]> {
-    return this.http.get(`${environment.api_base_url}/repositories/`)
+    return this.http.get(`${environment.api_base_url}/projects/`)
     .pipe(map(this.loadData))
   }
 
